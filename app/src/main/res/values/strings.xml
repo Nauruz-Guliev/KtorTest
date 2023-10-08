@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeatherKtor</string>
+    <string name="search_place_holder">Search for a city</string>
+
+    <string name="temperature_value">%d°C</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind_speed_key">Wind \nspeed</string>
+    <string name="wind_speed_value">%.1fm/s</string>
+    <string name="icon_link">https://openweathermap.org/img/w/%s.png</string>
+    <string name="try_again">Try again</string>
+</resources>
