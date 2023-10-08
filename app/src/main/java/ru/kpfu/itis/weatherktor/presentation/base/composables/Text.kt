@@ -1,4 +1,4 @@
-package ru.kpfu.itis.weatherktor.presentation.screens.composables
+package ru.kpfu.itis.weatherktor.presentation.base.composables
 
 import androidx.annotation.ColorRes
 import androidx.annotation.DimenRes

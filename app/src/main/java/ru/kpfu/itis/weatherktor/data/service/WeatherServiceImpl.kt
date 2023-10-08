@@ -13,7 +13,6 @@ class WeatherServiceImpl(private val client: HttpClient) : WeatherService {
 
     override suspend fun getWeather(city: String): WeatherDto =
         client.get {
-            URLBuilder
             url {
                 path("data/2.5/weather")
                 parameter("q", city)

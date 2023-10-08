@@ -12,6 +12,7 @@ import ru.kpfu.itis.weatherktor.di.utilsModule
 import ru.kpfu.itis.weatherktor.di.viewModelModule
 
 class App : Application() {
+
     override fun onCreate() {
         super.onCreate()
         initDependencies()

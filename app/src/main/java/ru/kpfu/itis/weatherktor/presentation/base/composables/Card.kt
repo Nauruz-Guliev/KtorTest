@@ -1,4 +1,4 @@
-package ru.kpfu.itis.weatherktor.presentation.screens.composables
+package ru.kpfu.itis.weatherktor.presentation.base.composables
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row

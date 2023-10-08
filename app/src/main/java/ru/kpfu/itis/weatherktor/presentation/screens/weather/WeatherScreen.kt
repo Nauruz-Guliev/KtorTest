@@ -50,7 +50,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import org.koin.androidx.compose.koinViewModel
 import ru.kpfu.itis.weatherktor.R
-import ru.kpfu.itis.weatherktor.presentation.screens.composables.InfoCard
+import ru.kpfu.itis.weatherktor.presentation.base.composables.InfoCard
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
