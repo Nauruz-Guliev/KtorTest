@@ -87,6 +87,15 @@ dependencies {
     implementation("io.ktor:ktor-client-auth:$ktorVersion")
     implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
 
+    val retrofitVersion = "2.9.0"
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+
+    //by default kotlinx serialization is not supported by retrofit so this library is needed
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
+
+    val loggingInterceptorVersion = "4.11.0"
+    implementation("com.squareup.okhttp3:logging-interceptor:$loggingInterceptorVersion")
+
     val mviKotlinVersion = "3.2.1"
     implementation("com.arkivanov.mvikotlin:mvikotlin:$mviKotlinVersion")
     implementation("com.arkivanov.mvikotlin:mvikotlin-main:$mviKotlinVersion")

@@ -13,10 +13,10 @@ import io.ktor.serialization.kotlinx.json.json
 import io.ktor.utils.io.ByteReadChannel
 import ru.kpfu.itis.weatherktor.data.dto.WeatherDto
 
-class WeatherServiceImplTest : BehaviorSpec({
+class WeatherServiceKtorImplTest : BehaviorSpec({
 
     Given("Ktor client") {
-        val client = WeatherServiceImpl(HttpClient(
+        val client = WeatherServiceKtorImpl(HttpClient(
             engine = MockEngine { request ->
                 respond(
                     content = ByteReadChannel("""$TEST_JSON"""),
@@ -41,7 +41,7 @@ class WeatherServiceImplTest : BehaviorSpec({
     }
 }) {
 
-    companion object {
+    private companion object {
 
         fun getExpectedModel() = WeatherDto(
             base = "stations",

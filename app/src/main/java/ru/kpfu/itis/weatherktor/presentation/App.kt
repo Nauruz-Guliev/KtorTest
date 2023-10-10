@@ -7,7 +7,8 @@ import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 import ru.kpfu.itis.weatherktor.di.dataModule
 import ru.kpfu.itis.weatherktor.di.domainModule
-import ru.kpfu.itis.weatherktor.di.networkModule
+import ru.kpfu.itis.weatherktor.di.ktorClientModule
+import ru.kpfu.itis.weatherktor.di.retrofitServiceImplModule
 import ru.kpfu.itis.weatherktor.di.utilsModule
 import ru.kpfu.itis.weatherktor.di.viewModelModule
 
@@ -26,7 +27,8 @@ class App : Application() {
                 listOf(
                     utilsModule,
                     dataModule,
-                    networkModule,
+                    ktorClientModule,
+                    retrofitServiceImplModule,
                     domainModule,
                     viewModelModule
                 )
